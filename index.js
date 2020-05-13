@@ -28,6 +28,7 @@ const translate = (string="") => {
     if (protein === undefined)
       throw new Error ('Invalid codon')
 
+    //Break out of loop if the protein string matches STOP meaning 
     if (protein === 'STOP')
       break;
 
